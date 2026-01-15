@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1d4ed8;
+  --color-surface: #ffffff;
+  --color-ink: #0f172a;
+}
+
+.dark {
+  --color-primary: #60a5fa;
+  --color-surface: #0b1220;
+  --color-ink: #e2e8f0;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body), ui-sans-serif, system-ui;
+  @apply bg-[radial-gradient(circle_at_top,_#f8fafc,_#e2e8f0_60%,_#cbd5f5_100%)] text-[color:var(--color-ink)] antialiased;
+}
+
+.dark body {
+  @apply bg-[radial-gradient(circle_at_top,_#101827,_#0b1120_60%,_#0f172a_100%)] text-[color:var(--color-ink)];
+}
+
+.card {
+  @apply rounded-2xl bg-[color:var(--color-surface)] shadow-soft ring-1 ring-black/5 transition;
+}
+
+.dark .card {
+  @apply ring-white/10;
+}
+
+.section {
+  @apply py-16 md:py-20;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display), ui-serif, Georgia;
+}
+
+.section-grid {
+  @apply grid gap-6 md:gap-8;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+}
+
+.dark .btn-secondary {
+  @apply border-slate-600 text-slate-200 hover:border-slate-400 hover:text-white;
+}
