@@ -59,7 +59,7 @@ export type IndustryExtras = {
 };
 
 export const profile: Profile = {
-  name: "Te-An (Hansen) Lee, MSc",
+  name: "Te-An (Hansen) Lee, MSc, ASCPi(CM)",
   title: "PhD student | Translational Scientist",
   tagline: "Eliminating bottlenecks from basic immunology to clinical translation.",
   location: "Melbourne, Australia",
