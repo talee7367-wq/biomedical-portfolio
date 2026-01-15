@@ -75,15 +75,15 @@ export const profile: Profile = {
 export const highlights: Highlight[] = [
   {
     title: "Impact",
-    description: "From target discovery to clinical translation with measurable endpoints."
+    description: "From basic immunology discovery to clinical translation."
   },
   {
     title: "Methods",
-    description: "Multi-omics, mechanistic modeling, and assay development across pipelines."
+    description: "Multi-omics, high-throughput screening, and assay development across pipelines."
   },
   {
     title: "Domain",
-    description: "Immunology, metabolic disease, and oncology with cross-disciplinary teams."
+    description: "Immuno-oncology and immunotherapy with cross-disciplinary teams."
   }
 ];
 
