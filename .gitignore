@@ -1,1 +1,13 @@
-node_modules
+# dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Vercel (CLI 會產生，內含 project/org id)
+.vercel/
+
+# env (避免把密鑰推上去；保留 .env.example 不要忽略它)
+.env
+.env.*.local
