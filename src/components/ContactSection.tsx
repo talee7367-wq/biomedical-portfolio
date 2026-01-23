@@ -59,12 +59,22 @@ export default function ContactSection({ profile, title = "Let’s Collaborate" 
               <a href={profile.links.linkedin} className="inline-flex items-center gap-2 hover:text-primary">
                 <Linkedin size={16} /> LinkedIn
               </a>
-              <a href={profile.links.scholar} className="inline-flex items-center gap-2 hover:text-primary">
-                <School size={16} /> Scholar
-              </a>
-              <a href={profile.links.github} className="inline-flex items-center gap-2 hover:text-primary">
-                <Github size={16} /> GitHub
-              </a>
+              {profile.links.scholar && (
+  <a
+    href={profile.links.scholar}
+    className="inline-flex items-center gap-2 hover:text-primary"
+  >
+    <School size={16} /> Scholar
+  </a>
+)}
+              {profile.links.github && (
+  <a
+    href={profile.links.github}
+    className="inline-flex items-center gap-2 hover:text-primary"
+  >
+    <Github size={16} /> GitHub
+  </a>
+)}
             </div>
           </div>
         </div>
