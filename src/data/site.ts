@@ -6,8 +6,7 @@ export type Profile = {
   email: string;
   links: {
     linkedin: string;
-    scholar: string;
-    github: string;
+    ORCID: string;
   };
   cvUrl: string;
 };
@@ -59,15 +58,14 @@ export type IndustryExtras = {
 };
 
 export const profile: Profile = {
-  name: "Te-An (Hansen) Lee, MSc, ASCPi(CM)",
-  title: "PhD student | Translational Scientist",
+  name: "Te-An (Hansen) Lee, MSc, MLS^ASCPi(CM)",
+  title: "PhD student | Immunology & Translational Science",
   tagline: "Eliminating bottlenecks from basic immunology to clinical translation.",
   location: "Melbourne, Australia",
   email: "tean.lee@student.unimelb.edu.au",
   links: {
-    linkedin: "https://linkedin.com/in/your-handle",
-    scholar: "https://scholar.google.com/your-profile",
-    github: "https://github.com/your-handle"
+    linkedin: "https://www.linkedin.com/in/teanlee",
+    ORCID: "https://orcid.org/0000-0003-1987-2653",
   },
   cvUrl: "/cv.pdf"
 };
