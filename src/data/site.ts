@@ -68,8 +68,8 @@ export const profile: Profile = {
   links: {
     linkedin: "https://www.linkedin.com/in/teanlee",
     ORCID: "https://orcid.org/0000-0003-1987-2653",
-    scholar: "https://scholar.google.com/citations?user=example",
-    github: "https://github.com/teanlee"
+    scholar: "",
+    github: ""
   },
   cvUrl: "/cv.pdf"
 };
